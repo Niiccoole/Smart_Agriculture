@@ -29,3 +29,8 @@ node --test pflanzenwache/model.test.mjs
 ## Sprint
 
 Das [Sprint-Backlog](SPRINT.md) enthält die Arbeitspakete, Rollenbeiträge und Abnahmekriterien.
+
+## Zeitplan und Produktpräsentation
+
+- [Zeitplan für Sprint 1](ZEITPLAN.md)
+- [Produktpräsentation als PowerPoint](Pflanzenwache.pptx)
