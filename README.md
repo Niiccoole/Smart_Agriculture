@@ -143,3 +143,7 @@ Das Projekt zeigt die grundlegende Umsetzung eines Smart-Agriculture-Monitoring-
 * Erweiterung des Flutter-Dashboards
 * Implementierung eines sicheren Benutzer- und Rollensystems
 
+
+## Pflanzenwache-Demo
+
+[Dashboard starten und testen](pflanzenwache/README.md).

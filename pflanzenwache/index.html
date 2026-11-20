@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Pflanzenwache</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <header><div class="brand"><span aria-hidden="true">✿</span> Pflanzenwache</div><span class="mode">Simulierte Messdaten</span></header>
+  <main>
+    <section class="intro">
+      <p class="location">GEWÄCHSHAUS</p>
+      <h1>Welche Pflanze braucht Wasser?</h1>
+      <p>Prüfe die Bodenfeuchte und erkenne, wenn eine Messung fehlt.</p>
+    </section>
+    <section class="controls" aria-label="Demo-Steuerung">
+      <div><label for="scenario">Demo-Szenario</label>
+      <select id="scenario">
+        <option value="standard">Standard</option>
+        <option value="outage">Sensorausfall</option>
+        <option value="recovery">Erholung</option>
+      </select></div>
+      <button id="reset" type="button">Zurücksetzen</button>
+      <p id="summary" role="status"></p>
+    </section>
+    <section aria-labelledby="plant-heading">
+      <h2 id="plant-heading">Deine Pflanzen</h2>
+      <div class="grid" id="plants"></div>
+    </section>
+    <p class="rules">Demo-Regel: Gießen unter 30 % Bodenfeuchte. Ab 15 Minuten gelten Messungen als veraltet.</p>
+    <noscript>Bitte JavaScript aktivieren, um die Demo zu verwenden.</noscript>
+  </main>
+  <template id="plant-card">
+    <article class="card">
+      <div class="card-header"><h3></h3><span class="status"></span></div>
+      <p class="measure"></p>
+      <p class="age"></p>
+      <p class="action"></p>
+    </article>
+  </template>
+</body>
+</html>
